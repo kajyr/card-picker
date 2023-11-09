@@ -1,0 +1,31 @@
+<html>
+  <title>Cards</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</html>
+<body>
+  <div class="mx-auto my-0 w-4/5 max-w-screen-md">
+    <div class="controls flex justify-around p-4 space-x-4">
+      <button
+        type="button"
+        id="pick"
+        class="w-64 bg-slate-700 text-white rounded-md p-2"
+      >
+        Estrai
+      </button>
+      <button
+        type="button"
+        id="reset"
+        class="w-64 bg-slate-700 text-white rounded-md p-2"
+      >
+        Reset
+      </button>
+    </div>
+    <div id="card" class="h-64 flex items-center justify-center"></div>
+    <div
+      class="out grid grid-cols-6 sm:grid-cols-8 lg:grid-cols-12 gap-2"
+    ></div>
+  </div>
+  <script src="./index.js" defer async></script>
+</body>
